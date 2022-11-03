@@ -1,4 +1,0 @@
-/* Localized versions of Info.plist keys */
-
-CFBundleDisplayName = "Match Ball Puzzle";
-NSUserTrackingUsageDescription = "この識別子は、パーソナライズされた広告を配信するために使用されます。";
