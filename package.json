@@ -1,10 +1,8 @@
 {
-  "name": "com.MoNoProduction.MoNoUtilityPackage",
+  "name": "com.monoproduction.monoutilitypackage",
   "displayName": "MoNoUtilityPackage",
   "version": "1.0.0",
   "unity": "2021.3.1",
   "description": "This package is compounded utility scripts, eapecially Singleton, Vibration, adapting ATT.",
-  "author": {
-    "name": "Takahiro Morimoto"
-  }
+  "dependencies": {}
 }
