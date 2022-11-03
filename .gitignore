@@ -2,6 +2,18 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
+
+/bin/
+/[Pp]ackage/
+/[Pp]ackages/
+/[Pp]roject[Ss]ettings/
+/[Uu]ser[Ss]ettings/
+.vsconfig
+
+/[Aa]ssets/Scenes/
+
+
+# Common Packages
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -42,6 +54,7 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+*.unitypackage
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -53,7 +66,6 @@ sysinfo.txt
 
 # Builds
 *.apk
-*.unitypackage
 
 # Crashlytics generated file
 crashlytics-build.properties
