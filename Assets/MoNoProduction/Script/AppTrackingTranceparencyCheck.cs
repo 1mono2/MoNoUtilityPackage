@@ -4,12 +4,10 @@ using System.Collections;
 using Unity.Advertisement.IosSupport;
 using UnityEngine;
 using UnityEngine.iOS;
-using GoogleMobileAds.Placement;
-using GoogleMobileAds.Api;
 
-public class Example : MonoBehaviour
+public class AppTrackingTranceparencyCheck 
 {
-    private IEnumerator Start()
+    public IEnumerator Check()
     {
         // idntify iOS version due to avoid less than iOS 14.5 
         var iOSVersion = GetiOSVersion();
@@ -37,28 +35,8 @@ public class Example : MonoBehaviour
         // トラッキングが許可されている場合は IDFA が文字列で出力されます
         // 許可されていない場合は「00000000-0000-0000-0000-000000000000」が出力されます  
         Debug.Log(Device.advertisingIdentifier);
-
-
-        //var attStatus = ATTrackingStatusBinding.GetAuthorizationTrackingStatus();
-        //if(ATTrackingStatusBinding.GetAuthorizationTrackingStatus() == ATTrackingStatusBinding.AuthorizationTrackingStatus.AUTHORIZED)
-        //{
-        //    RequestBannerAd();
-        //}
-        //else
-        //{
-        //    var builder = new AdRequest.Builder();
-        //    builder = builder.AddExtra("npa", "1");
-        //}
-
-        RequestBannerAd();
     }
 
-    void RequestBannerAd()
-    {
-        BannerAdGameObject bannerAd = MobileAds.Instance.GetAd<BannerAdGameObject>("Banner Ad");
-        bannerAd.LoadAd();
-
-    }
 
     /// <summary>
     /// To get the devise's iOS version
