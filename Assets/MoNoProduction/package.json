@@ -1,7 +1,7 @@
 {
   "name": "com.monoproduction.monoutilitypackage",
   "displayName": "MoNo Utility Package",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "unity": "2021.3",
   "description": "This package is compounded utility scripts, eapecially Singleton, Vibration, adapting ATT.",
   "dependencies": {
