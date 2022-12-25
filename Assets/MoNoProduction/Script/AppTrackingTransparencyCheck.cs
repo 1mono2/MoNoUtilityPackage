@@ -8,11 +8,11 @@ using UnityEngine.iOS;
 namespace MoNo.Utility
 {
 
-    public class AppTrackingTranceparencyCheck
+    public class AppTrackingTransparencyCheck
     {
         public IEnumerator Check()
         {
-            // idntify iOS version due to avoid less than iOS 14.5 
+            // identify iOS version due to avoid less than iOS 14.5 
             var iOSVersion = GetiOSVersion();
             Debug.Log("iOS version : " + iOSVersion);
             if (iOSVersion >= 14.5)
@@ -47,8 +47,7 @@ namespace MoNo.Utility
         /// <returns>iOS version</returns>
         static float GetiOSVersion()
         {
-            float version;
-            if (float.TryParse(Device.systemVersion, out version))
+            if (float.TryParse(Device.systemVersion, out var version))
             {
                 return version;
             }

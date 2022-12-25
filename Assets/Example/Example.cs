@@ -9,7 +9,7 @@ public class Example : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AppTrackingTranceparencyCheck att = new AppTrackingTranceparencyCheck();
+        AppTrackingTransparencyCheck att = new AppTrackingTransparencyCheck();
         StartCoroutine(att.Check());
     }
 

@@ -17,7 +17,7 @@ namespace iOS.Editor
         private const string LOCALIZATION_ARRAY_KEY = "CFBundleLocalizations";
         private const string TargetDirectory = "Unity-iPhone Tests";
         private const string TargetFolder = "Unity-iPhone Tests";
-        private static readonly string LocalizationFolderPath = Path.Combine(Application.dataPath, "MoNoProduction/Script/Editor/iOS/Localizations");
+        private static readonly string LocalizationFolderPath = Path.Combine(Application.dataPath, "../Packages/com.monoproduction.monoutilitypackage/Script/Editor/iOS/Localizations");
 
         /// <summary>ビルド後処理</summary>
         [PostProcessBuild]

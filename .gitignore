@@ -2,20 +2,6 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-
-/bin/
-/[Pp]ackage/
-/[Pp]ackages/
-/[Pp]roject[Ss]ettings/
-/[Uu]ser[Ss]ettings/
-.vsconfig
-.DS_Store
-.DS_Store?
-
-/[Aa]ssets/Scenes/
-
-
-# Common Packages
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -23,10 +9,13 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/[Uu]nityGenerated/
+[Uu]serSettings/
+/Assets/AssetStoreTools*
+Export/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
-# !/[Aa]ssets/**/*.meta
-
+!/[Aa]ssets/**/*.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
@@ -36,6 +25,13 @@
 
 # Visual Studio cache directory
 .vs/
+
+# editor config file
+.editorconfig
+.vscode/
+.vsconfig
+*.code-workspace
+.idea/
 
 # Gradle cache directory
 .gradle/
@@ -57,7 +53,7 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
-*.unitypackage
+*.DS_Store
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -69,7 +65,23 @@ sysinfo.txt
 
 # Builds
 *.apk
+*.unitypackage
+*.aab
+*.app
 
 # Crashlytics generated file
-crashlytics-build.properties
+crashlytics-build.propertiess
+*.blob
 
+# Recording File
+*.mp4
+/[Rr]ecording/
+/[Rr]ecordings/
+
+
+# Packed Addressables
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+
+# Temporary auto-generated Android Assets
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
